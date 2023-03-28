@@ -49,6 +49,22 @@ namespace gyak06_eu810u
         {
             var xml = new XmlDocument();
             xml.LoadXml(result);
+
+            foreach (XmlElement item in xml.DocumentElement)
+            {
+                var date = item.GetAttribute("date");
+
+                var rate = (XmlElement)item.ChildNodes[0];
+                var currency = rate.GetAttribute("curr");
+                var value = rate.InnerText;
+
+                Rates.Add(new RateData()
+                { Date = DateTime.Parse(date),
+                  Currency = currency,
+                  Value = decimal.Parse(value)});
+
+                
+            }
         }
     }
 }

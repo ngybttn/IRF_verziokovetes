@@ -41,14 +41,14 @@ namespace gyak06_eu810u
             this.mnbdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.mnbdataGridView.Location = new System.Drawing.Point(12, 12);
             this.mnbdataGridView.Name = "mnbdataGridView";
-            this.mnbdataGridView.Size = new System.Drawing.Size(344, 345);
+            this.mnbdataGridView.Size = new System.Drawing.Size(351, 345);
             this.mnbdataGridView.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 362);
+            this.ClientSize = new System.Drawing.Size(370, 362);
             this.Controls.Add(this.mnbdataGridView);
             this.Name = "Form1";
             this.Text = "Form1";
