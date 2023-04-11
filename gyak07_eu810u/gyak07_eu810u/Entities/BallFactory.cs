@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace gyak07_eu810u.Entities
 {
-    class BallFactory
+    public class BallFactory
     {
 
         public Ball CreateNew()

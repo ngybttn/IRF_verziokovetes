@@ -39,7 +39,7 @@ namespace gyak07_eu810u
             // 
             this.mainPanel.Location = new System.Drawing.Point(23, 12);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(749, 412);
+            this.mainPanel.Size = new System.Drawing.Size(765, 426);
             this.mainPanel.TabIndex = 0;
             // 
             // createTimer

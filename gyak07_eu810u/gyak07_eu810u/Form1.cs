@@ -16,11 +16,13 @@ namespace gyak07_eu810u
         private List<Ball> _balls = new List<Ball>();
 
         private BallFactory _factory;
+
         public BallFactory Factory
         {
             get { return _factory; }
             set { _factory = value; }
         }
+
 
         public Form1()
         {
@@ -38,7 +40,20 @@ namespace gyak07_eu810u
 
         private void conveyorTimer_Tick(object sender, EventArgs e)
         {
+            var maxPosition = 0;
+            foreach (var ball in _balls)
+            {
+                ball.MoveBall();
+                if (ball.Left > maxPosition)
+                    maxPosition = ball.Left;
+            }
 
+            if (maxPosition > 1000)
+            {
+                var oldestBall = _balls[0];
+                mainPanel.Controls.Remove(oldestBall);
+                _balls.Remove(oldestBall);
+            }
         }
     }
 }
