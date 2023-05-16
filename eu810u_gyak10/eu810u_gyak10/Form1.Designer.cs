@@ -36,7 +36,7 @@ namespace eu810u_gyak10
             this.buttonAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonStart = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelbadcount = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,23 +103,24 @@ namespace eu810u_gyak10
             this.buttonStart.TabIndex = 6;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
-            // label3
+            // labelbadcount
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(178, 415);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Rosszak száma: 0";
+            this.labelbadcount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelbadcount.AutoSize = true;
+            this.labelbadcount.Location = new System.Drawing.Point(178, 415);
+            this.labelbadcount.Name = "labelbadcount";
+            this.labelbadcount.Size = new System.Drawing.Size(93, 13);
+            this.labelbadcount.TabIndex = 7;
+            this.labelbadcount.Text = "Rosszak száma: 0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelbadcount);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonAdd);
@@ -144,7 +145,7 @@ namespace eu810u_gyak10
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelbadcount;
     }
 }
 
