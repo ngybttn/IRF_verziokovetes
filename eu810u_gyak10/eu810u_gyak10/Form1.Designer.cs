@@ -81,6 +81,7 @@ namespace eu810u_gyak10
             this.buttonAdd.TabIndex = 4;
             this.buttonAdd.Text = "Hozzáadás";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // dataGridView1
             // 
