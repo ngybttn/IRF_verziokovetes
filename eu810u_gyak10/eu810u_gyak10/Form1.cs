@@ -12,6 +12,8 @@ namespace eu810u_gyak10
 {
     public partial class Form1 : Form
     {
+        BindingList
+
         public Form1()
         {
             InitializeComponent();
